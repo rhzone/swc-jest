@@ -1,10 +1,13 @@
-/** @type {import('@jest/types').Config.InitialOptions} */
+require('dotenv').config()
+
+/** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
   transform: {
-    '^.+\\.(t|j)sx?$': '@swc/jest',
+    '^.+\\.(t|j)sx?$': process.env.transform == 'swc' ? '@swc/jest' : 'ts-jest',
   },
   extensionsToTreatAsEsm: ['.ts'],
   moduleNameMapper: {
     "@/(.*)": "<rootDir>/src/$1"
-  }
+  },
+  cacheDirectory: "./node_modules/.jest",
 }
