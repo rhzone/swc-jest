@@ -1,12 +1,17 @@
 {
   "compilerOptions": {
     "module": "esnext",
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "ES2015.Iterable"],
     "moduleResolution": "Node",
     "strictNullChecks": true,
+    "strict": true,
+    // "noImplicitAny": false,
+    "noImplicitThis": true,
     "sourceMap": true,
     "experimentalDecorators": true,
-    "target": "ES5",
-    "esModuleInterop": true
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "strictPropertyInitialization": false,
   },
+  "include": ["./src", "global.d.ts"],
 }

@@ -1,4 +1,12 @@
 {
-  "editor.snippetSuggestions": "bottom",
+  "editor.snippetSuggestions": "inline",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "code-runner.executorMap": {
+    "typescript": "bun",
+    // "typescript": "deno run",
+  },
+  "git.decorations.enabled": false
 }

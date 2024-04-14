@@ -1,0 +1,37 @@
+{
+	"swap": {
+		"scope": "javascript,typescript",
+		"prefix": "swap",
+		"body": [
+			"function swap(arr: number[], i: number, j: number) {",
+			"  const tmp = arr[i]",
+			"  arr[i] = arr[j]",
+			"  arr[j] = tmp",
+			"}",
+			"",
+		],
+		"description": "swap"
+	},
+	"ListNode": {
+		"scope": "javascript,typescript",
+		"prefix": "ListNode",
+		"body": [
+			"class ListNode {",
+			"  val: number",
+			"  next: ListNode | null",
+			"",
+			"  constructor(val?: number, next: ListNode | null = null) {",
+			"    this.val = val || 0",
+			"    this.next = next",
+			"  }",
+			"}"
+		],
+	},
+	"log": {
+		"scope": "javascript,typescript",
+		"prefix": "cl",
+		"body": [
+			"console.log($1)"
+		]
+	},
+}
